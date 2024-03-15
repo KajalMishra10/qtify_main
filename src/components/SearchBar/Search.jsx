@@ -25,8 +25,7 @@ const Search = ({placeholder, albums, handleAutoComplete}) => {
   return (
 		<>
 			<form className={styles.wrapper} onSubmit={handleSubmit}>
-				{/* <input className={styles.search} placeholder={placeholder} required /> */}
-				<Autocomplete
+				{/*<Autocomplete
 					freeSolo
 					id="free-solo-2-demo"
 					disableClearable
@@ -46,7 +45,9 @@ const Search = ({placeholder, albums, handleAutoComplete}) => {
 							}}
 						/>
 					)}
-				/>
+				/>  */}
+				
+				<input className={styles.search} placeholder={placeholder} required />
 				<button className={styles.searchButton} type='submit'>
 					<SearchIcon />
 				</button>
